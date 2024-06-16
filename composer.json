@@ -1,0 +1,22 @@
+{
+  "name": "codehq-dk/calendar-base",
+  "type": "module",
+  "description": "...",
+  "keywords": [],
+  "license": "",
+  "require": {
+    "php": "^8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodeHqDk\\Calendar\\" : "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
