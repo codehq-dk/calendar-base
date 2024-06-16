@@ -3,7 +3,7 @@
   "type": "module",
   "description": "...",
   "keywords": [],
-  "license": "",
+  "license": "MIT",
   "require": {
     "php": "^8.1"
   },
