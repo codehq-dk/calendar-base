@@ -3,8 +3,9 @@
 namespace CodeHqDk\Calendar;
 
 use DateTime;
+use JsonSerializable;
 
-class Birthday implements CalendarEntry
+class Birthday implements CalendarEntry, JsonSerializable
 {
     public function __construct(
         private readonly int $birthdate,
@@ -54,5 +55,15 @@ class Birthday implements CalendarEntry
     public function getAddress(): ?string
     {
         return null;
+    }
+
+    public function jsonSerialize(): mixed
+    {
+        return [
+            'birthdate' => $this->birthdate,
+            'name' => $this->name,
+            'description' => $this->description,
+            'photo_url' => $this->photo_url,
+        ];
     }
 }
