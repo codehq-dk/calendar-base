@@ -9,8 +9,8 @@ class Birthday implements CalendarEntry
     public function __construct(
         private readonly int $birthdate,
         private readonly string $name,
-        private readonly ?string $description,
-        private readonly ?string $photo_url
+        private readonly ?string $description = null,
+        private readonly ?string $photo_url = null
     ) {
     }
 
